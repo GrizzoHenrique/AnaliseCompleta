@@ -1,2 +1,104 @@
 # Analise Completa de dados
-Previsão de Preços de Aluguel com Regressão LinearEste projeto faz parte do curso de Ciência de Dados e tem como objetivo desenvolver modelos de regressão para prever o valor de aluguel de imóveis com base em suas características físicas e custos fixos.📌 Objetivo do ProjetoO foco principal é aplicar os conceitos de Regressão Linear Simples e Múltipla em um dataset de imóveis para entender como variáveis como metragem, número de quartos e valor do condomínio influenciam no preço final do aluguel.📊 DatasetA base de dados utilizada (ALUGUEL_MOD12.csv) contém as seguintes variáveis:Valor_Aluguel: Valor total pago no aluguel (Variável Alvo).Valor_Condominio: Custo mensal do condomínio.Metragem: Área total do imóvel em m².N_Quartos: Quantidade de quartos.N_banheiros: Quantidade de banheiros.N_Suites: Quantidade de suítes.N_Vagas: Quantidade de vagas de garagem.🛠️ Tecnologias UtilizadasPython 3.xPandas & NumPy: Manipulação e tratamento de dados.Matplotlib, Seaborn & Plotly: Visualização de dados e análise bivariada.Scikit-Learn: Divisão de dados (train_test_split) e implementação do modelo de Regressão Linear.🚀 Etapas do ProjetoPré-processamento I: Verificação de tipos de dados e identificação de valores nulos (nenhum dado faltante foi encontrado no conjunto).Análise Exploratória e Outliers: Utilização do método describe() para identificar distribuições e tratar possíveis valores discrepantes que poderiam afetar o modelo.Análise Bivariada: Criação de gráficos para identificar correlações entre as variáveis preditoras e o valor do aluguel.Modelagem:Implementação de Regressão Linear Simples.Implementação de Regressão Linear Múltipla utilizando todas as variáveis disponíveis.Avaliação: Comparação do desempenho dos modelos através do Coeficiente de Determinação ($R^2$).📈 ResultadosO modelo de Regressão Múltipla apresentou um desempenho superior ao modelo simples. Conforme observado no estudo, o uso de múltiplas variáveis independentes, mesmo aquelas com correlação individual menor, contribui para um $R^2$ mais robusto e uma previsão mais precisa.Como executarClone este repositório.Certifique-se de ter as bibliotecas instaladas: pip install pandas seaborn matplotlib plotly scikit-learn.Abra o notebook Profissao Cientista de Dados M18 Pratique.ipynb em seu ambiente Jupyter ou Google Colab.
+# 📊 Análise de Dados e Modelagem Preditiva – Regressão Linear
+
+Este repositório contém um projeto completo de **Análise de Dados** aplicado a uma base de **imóveis para aluguel**, abrangendo todas as etapas do pipeline de Ciência de Dados: desde a importação da base, **Análise Exploratória de Dados (EDA)**, **pré-processamento**, até o **treinamento e avaliação de modelos de Regressão Linear Simples e Múltipla**.
+
+O projeto foi desenvolvido como parte do **Módulo 18 – Pratique (Regressão Linear)**, com foco didático e prático na aplicação de modelos de regressão.
+
+---
+
+## 🎯 Objetivo do Projeto
+
+Construir modelos de regressão capazes de **prever o valor do aluguel de imóveis** a partir de variáveis explicativas como metragem, número de quartos, valor do condomínio, entre outras.
+
+Os objetivos específicos incluem:
+
+* Compreender o comportamento das variáveis do dataset
+* Identificar relações lineares entre variáveis
+* Aplicar técnicas básicas de pré-processamento
+* Treinar e avaliar modelos de regressão linear simples e múltipla
+
+---
+
+## 📁 Base de Dados
+
+A base utilizada contém informações de imóveis disponíveis para aluguel.
+
+### Variáveis disponíveis:
+
+* **Valor_Aluguel**: Valor total pago no aluguel (variável alvo)
+* **Valor_Condominio**: Valor do condomínio
+* **Metragem**: Área do imóvel em metros quadrados
+* **N_Quartos**: Número de quartos
+* **N_Banheiros**: Número de banheiros
+* **Vagas_Garagem**: Número de vagas de garagem
+
+---
+
+## 🛠️ Tecnologias e Bibliotecas Utilizadas
+
+* **Python 3**
+* **Pandas** – Manipulação e análise de dados
+* **NumPy** – Operações numéricas
+* **Matplotlib & Seaborn** – Visualização de dados
+* **Plotly Express** – Visualizações interativas
+* **Scikit-learn** – Pré-processamento, treino e avaliação dos modelos
+
+---
+
+## 🔍 Etapas do Projeto
+
+### 1️⃣ Importação e Inspeção Inicial dos Dados
+
+* Leitura do arquivo CSV
+* Visualização das primeiras linhas da base
+* Verificação dos tipos de dados
+* Identificação de valores nulos
+
+Essa etapa é essencial para entender a estrutura da base e antecipar possíveis ajustes necessários.
+
+---
+
+### 2️⃣ Análise Exploratória de Dados (EDA)
+
+Na análise exploratória, foram realizadas:
+
+* Estatísticas descritivas das variáveis
+* Análise da distribuição dos dados
+* Visualização de possíveis outliers
+* Análise da relação entre variáveis independentes e o valor do aluguel
+
+Gráficos como histogramas, boxplots e gráficos de dispersão foram utilizados para apoiar as análises.
+
+---
+
+### 3️⃣ Pré-Processamento dos Dados
+
+As principais etapas de pré-processamento incluíram:
+
+* Tratamento de valores ausentes
+* Seleção das variáveis relevantes
+* Separação entre variáveis independentes (features) e variável dependente (target)
+* Divisão da base em **conjunto de treino e teste**
+
+Essas etapas garantem que os dados estejam adequados para o treinamento dos modelos.
+
+---
+
+### 4️⃣ Regressão Linear Simples
+
+Foi aplicado um modelo de **Regressão Linear Simples**, considerando apenas uma variável explicativa para prever o valor do aluguel.
+
+Objetivos dessa etapa:
+
+* Entender o comportamento do modelo
+* Visualizar a relação linear entre duas variáveis
+* Interpretar coeficientes e intercepto
+
+O desempenho do modelo foi avaliado com métricas apropriadas.
+
+---
+
+### 5️⃣ Regressão Linear Múltipla
+
+Na sequên
